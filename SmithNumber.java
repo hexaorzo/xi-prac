@@ -17,15 +17,16 @@ public class SmithNumber
     public static void main(String args[])
     {   
         SmithNumber ob = new SmithNumber();
-        int sumd=0,sump=0,i=0,temp=0,temp1=0,j=0;
+        int sumd=0,sump=0,temp=0,temp1=0,j=0, count=0;
+        String outstr="";
         System.out.println("INPUT:");
         Scanner sc=new Scanner(System.in);
         System.out.print("Starting range : ");
         int lowerRange=sc.nextInt();
         System.out.print("Ending range : ");
         int upperRange=sc.nextInt();
-        System.out.print("Smith number in range "+lowerRange+" and "+upperRange+" are : ");
-        for(i=lowerRange;i<=upperRange;i++)
+        System.out.println("OUTPUT:");
+        for(int i=lowerRange;i<=upperRange;i++)
         {
             temp=i;
             sumd=0;
@@ -64,8 +65,18 @@ public class SmithNumber
             }
             if(sumd==sump)
             {
-                System.out.print(i+" ");
+                outstr=outstr+i+", ";
+                count++;
             }
+        }
+        if(count==0)
+            System.out.println("No Smith number in given range:");
+        else
+        {
+            outstr=outstr.substring(0,outstr.length()-2);
+            System.out.print("Smith number in range "+lowerRange+" and "+upperRange+" are : ");
+            System.out.println(outstr);
+            System.out.println("Total smith number in range are : "+count);
         }
     }
 }
