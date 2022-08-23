@@ -3,8 +3,7 @@ public class SmithNumber
 {
     public boolean isPrime(int number)
     {
-        int k=0;
-        for(k=2;k<=(number/2);k++)
+        for(int k=2;k<=(number/2);k++)
         {
 
             if(number%k==0)
@@ -17,7 +16,7 @@ public class SmithNumber
     public static void main(String args[])
     {   
         SmithNumber ob = new SmithNumber();
-        int sumd=0,sump=0,temp=0,temp1=0,j=0, count=0;
+        int sumd, sump, temp, temp1, count=0;
         String outstr="";
         System.out.println("INPUT:");
         Scanner sc=new Scanner(System.in);
@@ -26,7 +25,7 @@ public class SmithNumber
         System.out.print("Ending range : ");
         int upperRange=sc.nextInt();
         System.out.println("OUTPUT:");
-        for(int i=lowerRange;i<=upperRange;i++)
+        for(int i=Math.min(lowerRange,upperRange);i<=Math.max(lowerRange,upperRange);i++)
         {
             temp=i;
             sumd=0;
@@ -37,29 +36,19 @@ public class SmithNumber
                 temp=temp/10;
             }
             temp=i;
-            for(j=2;j<=i/2;j++)
+            for(int j=2;j<=i/2;j++)
             {
                 while(temp%j==0)
                 {
-                    if(j<4)
+                    if(ob.isPrime(j)==true)
                     {
-                        sump=sump+j;
-                        temp=temp/j;
-
-                    }
-                    else
-                    {
-                        if(ob.isPrime(j)==true)
+                        temp1=j;
+                        while(temp1>0)
                         {
-                            temp1=j;
-                            while(temp1>0)
-                            {
-                                sump=sump+(temp1%10);
-                                temp1=temp1/10;
-                            }
-                            temp=temp/j;
-
+                            sump=sump+(temp1%10);
+                            temp1=temp1/10;
                         }
+                        temp=temp/j;
                     }
                 }
             }
