@@ -5,14 +5,11 @@ class GoldbachNumber
     {
         for(int k=2;k<=(n/2);k++)
         {
-
             if(n%k==0)
                 return false;
         }
         return true;
-
     }
-
     public static void main(String args[]) throws IOException 
     { 
         GoldbachNumber ob = new GoldbachNumber();
@@ -24,18 +21,11 @@ class GoldbachNumber
             if(N%2==0) 
             { 
                 System.out.println("PRIME PAIRS ARE:"); 
-                for(int i=2;i<=N;i++) 
+                for(int i=2;i<=N/2;i++)
                 {
-                        for(int j=i;j<=N;j++) 
-                        { 
-                                if(ob.isPrime(i)&&ob.isPrime(j))  
-                                { 
-                                    int temp=i+j; 
-                                    if(temp==N) 
-                                        System.out.println(i+", "+j);
-                                }
-                            
-                        } 
+                    int j = N-i;
+                    if(ob.isPrime(i)&&ob.isPrime(j))  
+                        System.out.println(i+", "+j);
                 } 
             } 
             else 
