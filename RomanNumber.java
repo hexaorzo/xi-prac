@@ -17,8 +17,8 @@ class RomanNumber
             {
                 while (h >= a[i])
                 {
-                    x += ra[i]; //
-                    h -= a[i]; //
+                    x += ra[i]; //x = x + ra[i];
+                    h -= a[i]; //h = h- a[i];
                 }
             }
             System.out.println("Roman Number = "+x);
