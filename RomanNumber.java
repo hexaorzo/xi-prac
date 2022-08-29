@@ -7,7 +7,7 @@ class RomanNumber
         System.out.print("Enter a number : ");
         int n=Integer.parseInt(br.readLine());
         
-        if(n>=0 && n<=3000) 
+        if(n>0 && n<=3000) 
         {
             int h = n;
             int a[] = {1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1};
