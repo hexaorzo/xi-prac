@@ -24,17 +24,11 @@ public class MatrixDiagonal
                     			for (int j=0;j<n;j++)
                     			{
                         			if (i==j || i+j==n-1)
-                        			{
                             				a[i][j] = ch3;
-                        			}
                         			else if ((j>i && j<n-i-1) || (j<i && j>n-i-1))
-                        			{
                             				a[i][j] = ch1;
-                        			}
                         			else
-                        			{
                             				a[i][j] = ch2;
-                        			}
                     			}
                			}
                 		for (int i=0;i<n;i++)
@@ -47,13 +41,9 @@ public class MatrixDiagonal
                 		}
             		}
             		else
-            		{
                 		System.out.println("CHARACTERS ARE SAME(EQUAL)\nPLEASE ENTER DIFFERENT CHARACTER");
-            		}
         	}
-		else 
-        	{
+		else
 			System.out.println("SIZE OUT OF RANGE");
-		}
 	}
 }
