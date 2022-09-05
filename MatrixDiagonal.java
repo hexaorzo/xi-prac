@@ -19,7 +19,6 @@ public class MatrixDiagonal
             		System.out.println();
             		if (ch1!=ch2 && ch2!=ch3 && ch1!=ch3)
             		{
-                		int k=0;
                 		for (int i=0;i<n;i++)
                 		{
                     			for (int j=0;j<n;j++)
