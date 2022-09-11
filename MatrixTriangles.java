@@ -10,7 +10,7 @@ public class MatrixTriangles
 		if (n>3)
         	{
             		int a[][] = new int[n][n];
-            		System.out.println("Enter all the values of matrix ");
+            		System.out.println("Enter all the elements of matrix ");
 			for (i = 0; i < n; i++) 
             		{
 				for (j = 0; j < n; j++) 
