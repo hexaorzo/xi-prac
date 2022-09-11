@@ -36,7 +36,6 @@ public class MatrixTriangles
 				switch (ch) 
 				{
 					case 1:
-						System.out.println("Border Elements");
 						for (i = 0; i < n; i++) 
 						{
 							for (j = 0; j < n; j++)
@@ -50,7 +49,6 @@ public class MatrixTriangles
 						}
 						break;
 					case 2:
-						System.out.println("Inner Elements");
 						for (i = 0; i < n; i++)
 						{
 							for (j = 0; j < n; j++)
@@ -64,7 +62,6 @@ public class MatrixTriangles
 						}
 						break;
 					case 3:
-						System.out.println("Lower left triangle including diagonal");
 						for (i = 0; i < n; i++)
 						{
 							for (j = 0; j < n; j++)
@@ -78,7 +75,6 @@ public class MatrixTriangles
 						}
 						break;
 					case 4:
-						System.out.println("Lower left triangle excluding diagonal");
 						for (i = 0; i < n; i++)
 						{
 							for (j = 0; j < n; j++)
@@ -92,7 +88,6 @@ public class MatrixTriangles
 						}
 						break;
 					case 5:
-						System.out.println("Upper right triangle including diagonal");
 						for (i = 0; i < n; i++)
 						{
 							for (j = 0; j < n; j++)
@@ -106,7 +101,6 @@ public class MatrixTriangles
 						}
 						break;
 					case 6:
-						System.out.println("Upper right triangle excluding diagonal");
 						for (i = 0; i < n; i++)
 						{
 							for (j = 0; j < n; j++)
@@ -120,7 +114,6 @@ public class MatrixTriangles
 						}
 						break;
 					case 7:
-						System.out.println("Lower right triangle including diagonal");
 						for (i = 0; i < n; i++)
 						{
 							for (j = 0; j < n; j++)
@@ -134,7 +127,6 @@ public class MatrixTriangles
 						}
 						break;
 					case 8:
-						System.out.println("Lower right triangle excluding diagonal");
 						for (i = 0; i < n; i++)
 						{
 							for (j = 0; j < n; j++)
@@ -148,7 +140,6 @@ public class MatrixTriangles
 						}
 						break;
 					case 9:
-						System.out.println("Upper left triangle including diagonal");
 						for (i = 0; i < n; i++)
 						{
 							for (j = 0; j < n; j++)
@@ -162,7 +153,6 @@ public class MatrixTriangles
 						}
 						break;
 					case 10:
-						System.out.println("Upper left triangle excluding diagonal");
 						for (i = 0; i < n; i++)
 						{
 							for (j = 0; j < n; j++)
@@ -176,7 +166,6 @@ public class MatrixTriangles
 						}
 						break;
 					case 11:
-						System.out.println("Exiting...");
 						System.exit(0);
 					default:
 						System.out.println("Invalid choice");
