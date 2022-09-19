@@ -16,20 +16,20 @@ public class MatrixTriangles
 				for (j = 0; j < n; j++) 
 					a[i][j] = Integer.parseInt(br.readLine());
 			}
-            		System.out.println("\nMENU");
-			System.out.println("1. Border Elements");
-			System.out.println("2. Inner Elements");
-			System.out.println("3. Lower left triangle including diagonal");
-			System.out.println("4. Lower left triangle excluding diagonal");
-			System.out.println("5. Upper right triangle including diagonal");
-			System.out.println("6. Upper right triangle excluding diagonal");
-			System.out.println("7. Lower right triangle including diagonal");
-			System.out.println("8. Lower right triangle excluding diagonal");
-			System.out.println("9. Upper left triangle including diagonal");
-			System.out.println("10. Upper left triangle excluding diagonal");
-			System.out.println("11. Exit");
 			while (true) 
 			{
+            			System.out.println("\nMENU");
+				System.out.println("1. Border Elements");
+				System.out.println("2. Inner Elements");
+				System.out.println("3. Lower left triangle including diagonal");
+				System.out.println("4. Lower left triangle excluding diagonal");
+				System.out.println("5. Upper right triangle including diagonal");
+				System.out.println("6. Upper right triangle excluding diagonal");
+				System.out.println("7. Lower right triangle including diagonal");
+				System.out.println("8. Lower right triangle excluding diagonal");
+				System.out.println("9. Upper left triangle including diagonal");
+				System.out.println("10. Upper left triangle excluding diagonal");
+				System.out.println("11. Exit");
 				System.out.print("\nEnter your choice : ");
 				int ch = Integer.parseInt(br.readLine());
 				System.out.println();
