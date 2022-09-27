@@ -5,9 +5,7 @@ public class PalindromeSentence
     {
         String rev = "";
         for(int i = 0; i <= str.length()-1; i++)
-        {
             rev = str.charAt(i) + rev;
-        }
         return rev;
     }
     public static void main(String[] args)
