@@ -12,7 +12,7 @@ public class PalindromeSentence
     {
         PalindromeSentence ob = new PalindromeSentence();
         Scanner sc=new Scanner(System.in);
-        System.out.print("INPUT : ");
+        System.out.print("INPUT :\t");
         String str=sc.nextLine();
         String ends=".?!", word="", rev="";
         int j, l=str.length();
@@ -35,7 +35,7 @@ public class PalindromeSentence
                     word="";
                 }
             }
-            System.out.println("OUTPUT :\n"+str+"\n"+rev);
+            System.out.println("OUTPUT :\t"+str+"\n"+rev);
         }
     }
 }
