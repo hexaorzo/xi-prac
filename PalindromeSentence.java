@@ -31,10 +31,8 @@ public class PalindromeSentence
                 else
                 {
                     for(j=word.length()-1;j>=0;j--)
-                    {
                         if(word.charAt(word.length()-1)!=word.charAt(j))
                             break;
-                    }
                     rev+=word+ob.reverse((word.substring(0, j+1)))+" ";
                     word="";
                 }
