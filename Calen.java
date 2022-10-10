@@ -5,11 +5,12 @@ class Calen
     {
         BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
         System.out.println("DAY:");
-        int d=Integer.parseInt(br.readLine());
+        int da=Integer.parseInt(br.readLine());
         System.out.println("YEAR:");
         int y=Integer.parseInt(br.readLine());
         System.out.println("DATE AFTER (N DAYS):");
         int n=Integer.parseInt(br.readLine());
+        int d=da;
         if(d<1||d>366)
         {
             System.out.println("DAY NUMBER OUT OF RANGE");
@@ -37,8 +38,18 @@ class Calen
                 d=d-a[i];
         }
         System.out.println("DATE:\n"+d+"TH "+mo[x]+", "+y);
-        d=d+n;
-        for(i=x;i<12;i++)
+        d=da+n;
+        if(a[1]==28&&d>365)
+        {
+            y=y+1;
+            d=d-365;
+        }
+        else if(a[1]==29&&d>366)
+        {
+            y=y+1;
+            d=d-366;
+        }
+        for(i=0;i<12;i++)
         {
             if(d<=a[i])
             {
