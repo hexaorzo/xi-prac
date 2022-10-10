@@ -8,17 +8,17 @@ public class MatrixTriangles
 		System.out.print("Enter number of rows or columns of the square matrix : ");
 		int n = Integer.parseInt(br.readLine());
 		if (n>3)
-        	{
-            		int a[][] = new int[n][n];
-            		System.out.println("Enter all the elements of matrix ");
+        {
+	     	int a[][] = new int[n][n];
+            System.out.println("Enter all the elements of matrix ");
 			for (i = 0; i < n; i++) 
-            		{
+            {
 				for (j = 0; j < n; j++) 
 					a[i][j] = Integer.parseInt(br.readLine());
 			}
 			while (true) 
 			{
-            			System.out.println("\nMENU");
+            	System.out.println("\nMENU");
 				System.out.println("1. Border Elements");
 				System.out.println("2. Inner Elements");
 				System.out.println("3. Lower left triangle including diagonal");
