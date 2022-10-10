@@ -14,7 +14,7 @@ class Calen
         int i=0;
         String mo[] = {"JANUARY","FEBRUARY","MARCH","APRIL","MAY","JUNE","JULY","AUGUST","SEPTEMBER","OCTOBER","NOVEMBER","DECEMBER"};
         if((y%4==0)&&(y%100!=0)||(y%400==0))
-            a[i]=29;
+            a[1]=29;
         int x=0;
         for(i=0;i<12;i++)
         {
