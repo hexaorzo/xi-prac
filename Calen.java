@@ -10,6 +10,16 @@ class Calen
         int y=Integer.parseInt(br.readLine());
         System.out.println("DATE AFTER (N DAYS):");
         int n=Integer.parseInt(br.readLine());
+        if(d<1||d>366)
+        {
+            System.out.println("DAY NUMBER OUT OF RANGE");
+            System.exit(0);
+        }
+        if(n<1||n>100)
+        {
+            System.out.println("DATE AFTER (N DAYS) OUT OF RANGE");
+            System.exit(0);
+        }
         int a[]={31,28,31,30,31,30,31,31,30,31,30,31};
         int i=0;
         String mo[] = {"JANUARY","FEBRUARY","MARCH","APRIL","MAY","JUNE","JULY","AUGUST","SEPTEMBER","OCTOBER","NOVEMBER","DECEMBER"};
