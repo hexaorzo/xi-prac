@@ -14,6 +14,7 @@ public class BruceBanner
                 System.out.print("Team "+(i+1)+": ");
                 names[i] = br.readLine();
             }
+            System.out.println();
             int max = 0;
             for(int i=0;i<N;i++)
                 if(names[i].length()>max)
