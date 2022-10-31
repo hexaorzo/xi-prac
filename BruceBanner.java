@@ -1,5 +1,5 @@
 import java.io.*;
-public class Banner
+public class BruceBanner
 {
     public static void main(String[] args) throws IOException
     {
