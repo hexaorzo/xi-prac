@@ -1,5 +1,6 @@
 import java.util.*;
-public class LuckyNumbers {
+public class LuckyNumbers 
+{
     public static void main(String[] args) 
     {
         int i;
