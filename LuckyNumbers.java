@@ -15,7 +15,6 @@ public class LuckyNumbers {
                 a[i] = 0;
             i = k-1;
             for(i=(k-1);i<n;i++) // shifting array elements
-            {
                 if (a[i] == 0)
                 {
                     int j = i;
@@ -26,7 +25,6 @@ public class LuckyNumbers {
                     }
                     a[j] = 0;
                 }
-            }
         }
         System.out.print("The Lucky numbers less than "+n+" are:  ");
         for (i = 0; i < n; i++) 
