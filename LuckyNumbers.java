@@ -7,7 +7,7 @@ public class LuckyNumbers
         Scanner sc = new Scanner(System.in);
         System.out.print("N = ");
         int n = sc.nextInt();
-        int[] a = new int[(n+1)];
+        int[] a = new int[n];
         for (i = 0; i < n; i++)
             a[i] = (i+1);
         for (int k = 2; k <= n; k++) 
