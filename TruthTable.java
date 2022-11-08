@@ -1,4 +1,3 @@
-// print truth table seperated by |
 import java.util.*;
 public class TruthTable 
 {
